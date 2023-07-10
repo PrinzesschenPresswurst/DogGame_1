@@ -74,9 +74,9 @@ public class Pee : MonoBehaviour
     void DestroyPeeSpot()
     {
         Debug.Log("pee spot gets destroyed");
-        Destroy(objectToDestroy);
         particleSystem3= objectToBurn.GetComponent<ParticleSystem>();
         particleSystem3.Play();
+        Destroy(objectToDestroy);
         Invoke("BurnDownObject", 3f);
     }
 
