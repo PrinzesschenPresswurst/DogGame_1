@@ -16,7 +16,7 @@ public class BallDelivery : MonoBehaviour
         //
         if (other.tag == "BallGoal" )
         {
-            Debug.Log("ball delivered");
+            //Debug.Log("ball delivered");
             spriteRenderer = deactivateThough.GetComponent<SpriteRenderer>();
             spriteRenderer.enabled = false;
             
